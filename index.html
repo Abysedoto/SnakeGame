@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="recordAndControls">Your record: <span></span></div>
+  <div id="particles-js"></div>
+    <div class="game-box">
+      <div class="score"><span>0</span></div>
+        <div class="game">
+          <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <div class="controls">
+      <div class='controlup'><button id="top">&#8593;</button></div>
+      <div class='controldown'>
+        <button id="left">&#8592;</button>
+        <button id="bottom">&#8595;</button>
+        <button id="right">&#8594;</button>
+      </div>
+    </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous" defer></script>
+  <script src="js/particles.js"></script>
+  <script src="js/particlesActive.js"></script>
+  <script id='delApp' src="js/main.js"></script>
+</body>
+</html>

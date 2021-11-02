@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(56, 133, 95);
+  display: flex;
+  overflow: hidden;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.game-box {
+  position: absolute;
+  z-index: 3;
+  margin: auto;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.score {
+  display: flex;
+  width: 140px;
+  height: 70px;
+  background-color: rgb(61, 194, 61);
+  margin: auto;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif
+}
+.score span {
+  margin: auto;
+}
+.backgroundgame {
+  width: 356px;
+  height: 408px;
+  background-color: rgb(27, 104, 73);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+.game {
+  width: 352px;
+  height: 400px;
+  background-color: rgb(27, 104, 73);
+  margin: auto;
+  border: 1px solid white;
+}
+#canvas {
+  position: relative; 
+
+}
+.recordAndControls {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(15, 61, 51);
+}
+.controls {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  z-index: 5;
+  display: none;
+}
+button {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(27, 104, 73);
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: rgb(19, 75, 52);
+}
+.controlup {
+  position: relative;
+  left: 34%;
+  bottom: 5px;
+}
+.controldown {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .controls {
+    display: block;
+  }
+}
